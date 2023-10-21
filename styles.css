@@ -1,0 +1,676 @@
+/* General Css */
+body {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+a{
+    text-decoration: none;
+    color: #808080;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+}
+
+h1{
+    color: #000;
+    font-family: Inter;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 771;
+    line-height: 0%;
+}
+
+h2{
+    font-size: 4rem;
+    line-height: 0%;
+}
+
+h3{
+    font-size: 3rem;
+    line-height: 0%;
+}
+
+h4{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.prybtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border: 1.5px solid #000;
+    padding: 16px 48px; 
+    border-radius: 800px;
+    gap: 0.5rem;
+    transition: background-color 0.3s, color 0.3s
+}
+
+.prybtn:hover{
+    background-color: #000;
+    color: #fff;
+    transition-timing-function: ease-in-out;
+}
+
+.secbtn:hover{
+    box-shadow: 
+    /* horizontal offset */
+    0px
+    /* vertical offset */
+    0px
+    /* blur radius */
+   
+    /* spread radius */
+    12px
+    /* color */
+    rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+}
+
+.secbtn{
+    color: #fff;
+    border: 1.5px solid #000;
+    padding: 16px 48px; 
+    border-radius: 800px;
+    background-color: #000;
+}
+
+.pill{
+    font-size: 1.5rem;
+    font-weight: 300;
+    background-color: #F0F0F0;
+    color:rgba(rgb(0, 0, 0) 0.4);
+    padding: 16px 48px; 
+    border-radius: 800px;
+    animation: move 2s ease infinite;
+    transition: background-color 0.3s, color 0.3s, padding 0.2s, font-size 0.1s;
+    z-index: 0;
+}
+
+.pill:hover{
+    padding: 24px 60px;
+    color: #fff;
+    background-color: #000;
+    transition-timing-function: ease-in-out;
+    font-size: 1.5rem;
+}
+
+span{
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 661;
+    line-height: 160%;
+    letter-spacing: -0.03rem;
+}
+
+
+/* Navbar */
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0rem;
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    backdrop-filter: blur(8px); 
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 140%;
+    gap: 0.5rem;
+    color: black;
+}
+
+.navlist{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.navend{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.active{
+    font-weight: 400;
+    color: black;
+    text-decoration: underline;
+}
+
+.inactive:hover{
+    color: #000;
+    text-decoration: underline;
+}
+
+.bottom_maindiv{
+    height: 200px;
+}
+
+/* Homesection */
+
+.fulldiv{
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.top_maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.bottom_maindiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+    padding-bottom: 4rem;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* Projects */
+
+.project_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project_div h4{
+    margin-top: -0.2rem;
+}
+
+.project_div img{
+    filter: grayscale(100%);
+    opacity: 40%;
+    transform: translate(0, 0);
+    transition: box-shadow 0.2s, grayscale 1s, opacity 0.4s, transform 0.8s, filter 0.8s;
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+.project_div img:hover{
+    filter: grayscale(0%);
+    transition-timing-function: ease-in-out;
+    opacity: 100%;
+    box-shadow: 5px 10px 16px rgb(184, 184, 184);
+    transform: translate(0, -12px);
+    z-index: 1;
+}
+
+.project_div_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project_div_bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.projects_grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.projects_grid .prybtn{
+    margin-top: 2rem;
+}
+
+/* Skills */
+
+.skillspage_abt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillspage_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+    width: 77.5rem;
+    margin-top: 4rem;
+}
+
+.skillslist_pills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillspage_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #CBCBCB;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    border-bottom: 1.5px solid #e9e9e9;
+}
+
+.skillspage_div:hover{
+    color: #000;
+    border-bottom:1.5px solid #000;
+    transition: 0.5s ease-in-out;
+}
+
+.skillspage_div_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skillpage_div_mid{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.content{
+    position: absolute;
+}
+
+.c1{
+    top: -10rem;
+    left: -2rem;
+    transform: rotate(-5rem);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c1:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+
+.c2{
+    top: -12rem;
+    right: 6rem;
+    transform: rotate(7deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c2:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+
+.c3{
+    left: 10rem;
+    transform: rotate(6deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c3:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c4{
+    top: -2rem;
+    left: 42rem;
+    transform: rotate(-2deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c4:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c5{
+    bottom: -4rem;
+    left: 1rem;
+    transform: rotate(-12deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c5:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c6{
+    right: 12rem;
+    bottom: 2rem;
+    transform: rotate(4deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c6:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c7{
+    right: 4rem;
+    bottom:-8rem;
+    transform: rotate(14deg);
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c7:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c8{
+    left: 12rem;
+    bottom: 4rem;
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c8:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.3, 1.3);
+}
+
+.c9{
+    left: 20rem;
+    bottom: 6rem;
+    border-radius: 12rem;
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s;
+}
+
+.c9:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    transform: scale(1.4, 1.4);
+}
+
+.c10{
+    bottom: 4rem;
+    right: 10rem;
+    border-radius: 12rem;
+    opacity: 40%;
+    filter: grayscale(100);
+    transition: opacity 0.4s, filter 0.8s, transform 0.4s,  translate 0.5s;
+}
+
+.c10:hover{
+    opacity: 100%;
+    filter: grayscale(0);
+    transition-timing-function: ease-in-out;
+    translate: 2rem;
+    transform: scale(1.3, 1.3);
+}
+
+
+.skillspage_div-end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    text-align: center;
+}
+
+/* About me */
+.aboutme_desc{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+}
+
+.aboutme_desc_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    color: #939393;
+}
+
+/* Contact me */
+.contactme_content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contactme_div_left{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.iconslist{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-items: center;
+    gap: 2.5rem;
+}
+
+.icon{
+    transition: transform 0.2s;
+}
+
+.icon:hover{
+    transition-timing-function: ease-in-out;
+    transform:scale(2,2) ;
+}
+
+
+/* Contact Form */
+
+/* Style the form container */
+.contactme_div_right {
+    width: 560px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 547;
+    line-height: 160%;
+    letter-spacing: -0.0275rem;
+    border-radius: 8px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 8rem;
+    margin-right: 1.5rem;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    transition: box-shadow 2s;
+}
+
+.contactme_div_right:hover{
+    box-shadow: 
+    /* horizontal offset */
+    2px 
+    /* vertical offset */
+    2px 
+    /* blur radius */
+   
+    /* spread radius */
+    100px
+    /* color */
+    rgba(119, 119, 119, 0.25);
+    transition: 0.5s ease-in-out;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    width: 100%;
+    color: #fff;
+    border: 1.5px solid #000;
+    padding: 16px 48px; 
+    border-radius: 800px;
+    background-color: #000;
+    margin-top: 2rem;
+    transition: box-shadow 0.4s;
+}
+
+input[type="submit"]:hover{
+
+    box-shadow: 
+    /* horizontal offset */
+    0px
+    /* vertical offset */
+    0px
+    /* blur radius */
+   
+    /* spread radius */
+    12px
+    /* color */
+    rgba(0, 0, 0, 0.6);
+    transition: 0.5s ease-in-out;
+}
